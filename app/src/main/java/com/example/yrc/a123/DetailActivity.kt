@@ -1,5 +1,6 @@
 package com.example.yrc.a123
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.support.annotation.RequiresApi
@@ -27,6 +28,7 @@ class DetailActivity: AppCompatActivity(),ToolbarManager{
         val ID="DetailActivity:id"
         val CITY_NAME="DetailActivity:cityName"
     }
+    @SuppressLint("MissingSuperCall")
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_detail)
